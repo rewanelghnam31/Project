@@ -1,0 +1,195 @@
+<html>
+<head>
+<title> Airplane Tickets Reservation </title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<center><h1><u>Online Airplane Reservation</u></h1></center>
+<div>
+<div class="centerit">
+<p> Saturday | 1Pm <br> Thursday | 12Pm <br> Tusday | 5pm </p>
+</div>
+<div>
+<h4> ID: 2364 </h4>
+<h4> Direction: Egypt > USA </h4>
+<h4> Level: Level 3 </h4>
+<center><button type="submit" onClick="myFunction()"> Reserve Now ! </button></center>
+</div>
+</div>
+<div>
+<div class="centerit">
+<p> Saturday | 1Pm <br> Thursday | 12Pm <br> Tusday | 5pm </p>
+</div>
+<h4> ID: 2364 </h4>
+<h4> Direction: Egypt > Douha </h4>
+<h4> Level: Level 3 </h4>
+<center><button type="submit" onClick="myFunction()"> Reserve Now ! </button></center>
+</div>
+</div>
+<div>
+<div class="centerit">
+<p> Saturday | 1Pm <br> Thursday | 12Pm <br> Tusday | 5pm </p>
+</div>
+<h4> ID: 2364 </h4>
+<h4> Direction: Egypt > Netherlands </h4>
+<h4> Level: Level 3 </h4>
+<center><button type="submit" onClick="myFunction()"> Reserve Now ! </button></center>
+</div>
+<div class="centerit">
+<p> Saturday | 1Pm <br> Thursday | 12Pm <br> Tusday | 5pm </p>
+</div>
+<h4> ID: 2364 </h4>
+<h4> Direction: Egypt > Abu Dhabi </h4>
+<h4> Level: Level 3 </h4>
+<center><button type="submit" onClick="myFunction()"> Reserve Now ! </button></center>
+</div>
+</div>
+<div>
+<div class="centerit">
+<p> Saturday | 1Pm <br> Thursday | 12Pm <br> Tusday | 5pm </p>
+</div>
+<h4> ID: 2364 </h4>
+<h4> Direction: Egypt > Kuwait </h4>
+<h4> Level: Level 3 </h4>
+<center><button type="submit" onClick="myFunction()"> Reserve Now ! </button></center>
+</div>
+</div>
+<div>
+<div class="centerit">
+<p> Saturday | 1Pm <br> Thursday | 12Pm <br> Tusday | 5pm </p>
+</div>
+<h4> ID: 6743 </h4>
+<h4> Direction: Egypt > Canada </h4>
+<h4> Level: Level 3 </h4>
+<center><button type="submit" onClick="myFunction()"> Reserve Now ! </button></center>
+</div>
+<center><h2 id="message"></h2></center>
+<center><h3> Servey About Your Exp with Us </h3></center>
+<form id="form">
+        <div class="form-control">
+            <label for="name" id="label-name"> Name </label>
+            
+			<!-- Input Type Text -->
+            <input type="text" id="name" placeholder="Enter your name" />
+        </div>
+  
+        <div class="form-control">
+            <label for="email" id="label-email">
+                Email
+            </label>
+ 
+            <!-- Input Type Email-->
+            <input type="email"
+                   id="email"
+                   placeholder="Enter your email" />
+        </div>
+  
+        <div class="form-control">
+            <label for="age" id="label-age">
+                Age
+            </label>
+ 
+            <!-- Input Type Text -->
+            <input type="text"
+                   id="age"
+                   placeholder="Enter your age" />
+        </div>
+		
+		<div class="form-control">
+            <label for="num" id="label-num">
+                Phone Number
+            </label>
+ 
+            <!-- Input Type Text -->
+            <input type="text"
+                   id="num"
+                   placeholder="Enter your phone number" />
+        </div>
+  
+        <div class="form-control">
+            <label for="role" id="label-role">
+                How Did you hear about us?
+            </label>
+             
+            <!-- Dropdown options -->
+            <select name="role" id="role">
+                <option value="friend">friend</option>
+                <option value="social">SocialMedia</option>
+                <option value="ad">Advert</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+  
+        <div class="form-control">
+            <label>
+                Would you recommend us to a friend?
+            </label>
+ 
+            <!-- Input Type Radio Button -->
+            <label for="recommed-1">
+                <input type="radio"
+                       id="recommed-1"
+                       name="recommed">Yes</input>
+            </label>
+            <label for="recommed-2">
+                <input type="radio"
+                       id="recommed-2"
+                       name="recommed">No</input>
+            </label>
+            <label for="recommed-3">
+                <input type="radio"
+                       id="recommed-3"
+                       name="recommed">Maybe</input>
+            </label>
+        </div>
+  
+        <div class="form-control">
+            <label>Service can we add to the site
+                <small>(Check all that apply)</small>
+            </label>
+            <!-- Input Type Checkbox -->
+            <label for="inp-1">
+                <input type="checkbox"
+                       name="inp">More Travels</input></label>
+            <label for="inp-2">
+                <input type="checkbox"
+                       name="inp">More Felixable site</input></label>
+            <label for="inp-3">
+                <input type="checkbox"
+                       name="inp">Add Rate for every Trip</input></label>
+            <label for="inp-4">
+                <input type="checkbox"
+                       name="inp">Add more locations for the same travels</input></label>
+        </div>
+  
+        <div class="form-control">
+            <label for="comment">
+                Any comments or suggestions
+            </label>
+ 
+            <!-- multi-line text input control -->
+            <textarea name="comment" id="comment"
+                placeholder="Enter your comment here">
+            </textarea>
+        </div>
+  
+        <!-- Multi-line Text Input Control -->
+        <button type="submit" value="submit">
+            Submit
+        </button>
+    </form>
+
+<script>
+function myFunction() {
+  let text;
+  let num = prompt("Please enter your phone number:", "+201*********");
+  if (num == null || num == "") {
+    text = "User cancelled the request.";
+  } else {
+    text = "Your request has been sent with number " + num + "! to the doctor";
+  }
+  document.getElementById("message").innerHTML = text;
+}
+</script>
+</body>
+</html>
